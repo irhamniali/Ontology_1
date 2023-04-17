@@ -1,0 +1,685 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/irhamniali/ontologies/2023/3/untitled-ontology-54#"
+     xml:base="http://www.semanticweb.org/irhamniali/ontologies/2023/3/untitled-ontology-54"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:adms="http://www.w3.org/ns/adms#"
+     xmlns:doap="http://usefulinc.com/ns/doap#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:data-view="http://www.w3.org/2003/g/data-view#"
+     xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
+     xmlns:GCI-Health="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#"
+     xmlns:organization="http://ontology.eil.utoronto.ca/organization.owl#"
+     xmlns:GovernmentSpecifiedStatisticalArea="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/irhamniali/ontologies/2023/3/untitled-ontology-54">
+        <owl:imports rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/stato.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLObjectProperty_004084 -->
+
+    <owl:ObjectProperty rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLObjectProperty_004084">
+        <rdfs:label xml:lang="en">has occupied bed</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLObjectProperty_004089 -->
+
+    <owl:ObjectProperty rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLObjectProperty_004089">
+        <rdfs:label xml:lang="en">has_Unocupied_bed_facility</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLDataProperty_004061 -->
+
+    <owl:DatatypeProperty rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLDataProperty_004061">
+        <rdfs:label xml:lang="en">has budget</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLDataProperty_004085 -->
+
+    <owl:DatatypeProperty rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLDataProperty_004085">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:label xml:lang="en">has bed</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLDataProperty_004086 -->
+
+    <owl:DatatypeProperty rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLDataProperty_004086">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#HospitalBed"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label xml:lang="en">has unoccupied bed</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLDataProperty_004106 -->
+
+    <owl:DatatypeProperty rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLDataProperty_004106">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">budget_realization</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004057 -->
+
+    <owl:NamedIndividual rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004057">
+        <rdf:type rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#PublicHospital"/>
+        <organization:subordinateOf rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004059"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004081"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004082"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004083"/>
+        <wgs84_pos:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.563819479</wgs84_pos:lat>
+        <wgs84_pos:long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">95.33757687</wgs84_pos:long>
+        <GovernmentSpecifiedStatisticalArea:OWLDataProperty_004086 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;1st Class Bed&apos;  9
+&apos;2nd Class Bed&apos; 15
+&apos;3rd Class Bed&apos; 27</GovernmentSpecifiedStatisticalArea:OWLDataProperty_004086>
+        <rdfs:label xml:lang="en">Dr.Zainal Abidin Hospital</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004058 -->
+
+    <owl:NamedIndividual rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004058">
+        <rdf:type rdf:resource="http://schema.org/State"/>
+        <organization:commitedTo rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004059"/>
+        <rdfs:label xml:lang="en">Aceh</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004059 -->
+
+    <owl:NamedIndividual rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004059">
+        <rdf:type rdf:resource="http://ontology.eil.utoronto.ca/organization.owl#Organization"/>
+        <organization:subordinateOf rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004058"/>
+        <organization:superiorOf rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004057"/>
+        <organization:superiorOf rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004087"/>
+        <organization:superiorOf rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004088"/>
+        <GovernmentSpecifiedStatisticalArea:OWLDataProperty_004061 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">28,238,494,050.00</GovernmentSpecifiedStatisticalArea:OWLDataProperty_004061>
+        <GovernmentSpecifiedStatisticalArea:OWLDataProperty_004106>8,471,548,215.00</GovernmentSpecifiedStatisticalArea:OWLDataProperty_004106>
+        <rdfs:label xml:lang="en">Dinas Kesehatan Aceh</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004060 -->
+
+    <owl:NamedIndividual rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004060">
+        <rdf:type rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation-v2.owl#Monetary_scale"/>
+        <rdfs:label xml:lang="en">Medium</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004062 -->
+
+    <owl:NamedIndividual rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004062">
+        <rdf:type rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#PublicHospital"/>
+        <GCI-Health:committedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004074"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004081"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004082"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004083"/>
+        <wgs84_pos:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-6.201666625</wgs84_pos:lat>
+        <wgs84_pos:long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">106.8865703</wgs84_pos:long>
+        <GovernmentSpecifiedStatisticalArea:OWLDataProperty_004086 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;1st Class Bed&apos; 24
+&apos;2nd Class Bed&apos; 23
+&apos;3rd Class Bed&apos; 17</GovernmentSpecifiedStatisticalArea:OWLDataProperty_004086>
+        <rdfs:label xml:lang="en">Persahabatan Hospital</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004063 -->
+
+    <owl:NamedIndividual rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004063">
+        <rdf:type rdf:resource="http://schema.org/State"/>
+        <organization:commitedTo rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004074"/>
+        <rdfs:label xml:lang="en">DKI Jakarta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004066 -->
+
+    <owl:NamedIndividual rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004066">
+        <rdf:type rdf:resource="http://schema.org/State"/>
+        <rdfs:label xml:lang="en">Papua</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004067 -->
+
+    <owl:NamedIndividual rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004067">
+        <rdf:type rdf:resource="http://schema.org/State"/>
+        <organization:commitedTo rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004075"/>
+        <rdfs:label xml:lang="en">Jawa Barat</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004068 -->
+
+    <owl:NamedIndividual rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004068">
+        <rdf:type rdf:resource="http://schema.org/State"/>
+        <organization:commitedTo rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004105"/>
+        <rdfs:label xml:lang="en">Jawa Tengah</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004069 -->
+
+    <owl:NamedIndividual rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004069">
+        <rdf:type rdf:resource="http://schema.org/State"/>
+        <organization:commitedTo rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004104"/>
+        <rdfs:label xml:lang="en">Jawa Timur</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004070 -->
+
+    <owl:NamedIndividual rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004070">
+        <rdf:type rdf:resource="http://schema.org/State"/>
+        <organization:commitedTo rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004073"/>
+        <rdfs:label xml:lang="en">Sumatera Barat</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004071 -->
+
+    <owl:NamedIndividual rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004071">
+        <rdfs:label xml:lang="en">RSU M.Jamil</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004073 -->
+
+    <owl:NamedIndividual rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004073">
+        <rdf:type rdf:resource="http://ontology.eil.utoronto.ca/organization.owl#Organization"/>
+        <organization:superiorOf rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004071"/>
+        <organization:superiorOf rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004101"/>
+        <obo:RO_0001025 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004070"/>
+        <GovernmentSpecifiedStatisticalArea:OWLDataProperty_004061 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">37,986,299,875.00</GovernmentSpecifiedStatisticalArea:OWLDataProperty_004061>
+        <GovernmentSpecifiedStatisticalArea:OWLDataProperty_004106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11,395,889,962.50</GovernmentSpecifiedStatisticalArea:OWLDataProperty_004106>
+        <rdfs:label xml:lang="en">Dinas Kesehatan Sumatera Barat</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004074 -->
+
+    <owl:NamedIndividual rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004074">
+        <organization:commitedTo rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004062"/>
+        <organization:subordinateOf rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004063"/>
+        <organization:superiorOf rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004090"/>
+        <organization:superiorOf rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004091"/>
+        <GovernmentSpecifiedStatisticalArea:OWLDataProperty_004061 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32000000</GovernmentSpecifiedStatisticalArea:OWLDataProperty_004061>
+        <GovernmentSpecifiedStatisticalArea:OWLDataProperty_004106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">42,208,494,121.00</GovernmentSpecifiedStatisticalArea:OWLDataProperty_004106>
+        <rdfs:label xml:lang="en">Dinas Kesehatan DKI Jakarta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004075 -->
+
+    <owl:NamedIndividual rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004075">
+        <rdfs:label xml:lang="en">Dinas Kesehatan Jawa Barat</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004076 -->
+
+    <owl:NamedIndividual rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004076">
+        <rdfs:label xml:lang="en">Dinas Kesehatan Jawa Timur</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004077 -->
+
+    <owl:NamedIndividual rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004077">
+        <obo:RO_0001025 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004070"/>
+        <obo:IAO_0000404 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-0.6139160058894597</obo:IAO_0000404>
+        <obo:IAO_0000406 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">100.291256</obo:IAO_0000406>
+        <GovernmentSpecifiedStatisticalArea:OWLDataProperty_004061 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2300000000</GovernmentSpecifiedStatisticalArea:OWLDataProperty_004061>
+        <rdfs:label xml:lang="en">Sumatera Barat</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004078 -->
+
+    <owl:NamedIndividual rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004078">
+        <organization:subordinateOf rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004067"/>
+        <rdfs:label xml:lang="en">Dinas Kesehatan Jawa Barat</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004079 -->
+
+    <owl:NamedIndividual rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004079">
+        <rdf:type rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#PrivateHospital"/>
+        <obo:RO_0001025 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004067"/>
+        <obo:IAO_0000404 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12234</obo:IAO_0000404>
+        <obo:IAO_0000406 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">534223</obo:IAO_0000406>
+        <rdfs:label xml:lang="en">RS St.Boromeus</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004080 -->
+
+    <owl:NamedIndividual rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004080">
+        <rdf:type rdf:resource="http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#Material_Resource"/>
+        <rdfs:label xml:lang="en">VIP Bed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004081 -->
+
+    <owl:NamedIndividual rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004081">
+        <rdf:type rdf:resource="http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#Material_Resource"/>
+        <rdfs:label xml:lang="en">1st Class Bed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004082 -->
+
+    <owl:NamedIndividual rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004082">
+        <rdf:type rdf:resource="http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#Material_Resource"/>
+        <rdfs:label xml:lang="en">2nd Class Bed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004083 -->
+
+    <owl:NamedIndividual rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004083">
+        <rdf:type rdf:resource="http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#Material_Resource"/>
+        <rdfs:label xml:lang="en">3rd Class Bed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004087 -->
+
+    <owl:NamedIndividual rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004087">
+        <rdf:type rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#PublicHospital"/>
+        <organization:subordinateOf rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004059"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004081"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004082"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004083"/>
+        <wgs84_pos:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.555502859</wgs84_pos:lat>
+        <wgs84_pos:long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">95.32596923</wgs84_pos:long>
+        <GovernmentSpecifiedStatisticalArea:OWLDataProperty_004086 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;1st Class Bed&apos; 11
+&apos;2nd Class Bed&apos; 18
+&apos;3rd Class Bed&apos; 29</GovernmentSpecifiedStatisticalArea:OWLDataProperty_004086>
+        <rdfs:label xml:lang="en">RSUD Kota Subulussalam</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004088 -->
+
+    <owl:NamedIndividual rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004088">
+        <rdf:type rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#PublicHospital"/>
+        <organization:subordinateOf rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004059"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004081"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004082"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004083"/>
+        <wgs84_pos:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.555502859</wgs84_pos:lat>
+        <wgs84_pos:long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">95.32596923</wgs84_pos:long>
+        <GovernmentSpecifiedStatisticalArea:OWLDataProperty_004086 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;1st Class Bed&apos; 9
+&apos;2nd Class Bed&apos; 15
+&apos;3rd Class Bed&apos; 27</GovernmentSpecifiedStatisticalArea:OWLDataProperty_004086>
+        <rdfs:label xml:lang="en">RS Iskandar Muda Banda Aceh</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004090 -->
+
+    <owl:NamedIndividual rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004090">
+        <rdf:type rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#PublicHospital"/>
+        <organization:subordinateOf rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004074"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004081"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004082"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004083"/>
+        <wgs84_pos:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-6.302977517</wgs84_pos:lat>
+        <wgs84_pos:long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">106.8619651</wgs84_pos:long>
+        <GovernmentSpecifiedStatisticalArea:OWLDataProperty_004086 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;1st Class Bed&apos; 27
+&apos;2nd Class Bed&apos;	28
+&apos;3rd Class Bed&apos;	38</GovernmentSpecifiedStatisticalArea:OWLDataProperty_004086>
+        <rdfs:label xml:lang="en">RS Pasar Rebo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004091 -->
+
+    <owl:NamedIndividual rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004091">
+        <rdf:type rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#PublicHospital"/>
+        <organization:subordinateOf rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004074"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004081"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004082"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004083"/>
+        <wgs84_pos:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-6.293031579</wgs84_pos:lat>
+        <wgs84_pos:long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">106.8185683</wgs84_pos:long>
+        <GovernmentSpecifiedStatisticalArea:OWLDataProperty_004086 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;1st Class Bed&apos; 28
+&apos;2nd Class Bed&apos;	29
+&apos;3rd Class Bed&apos;	27</GovernmentSpecifiedStatisticalArea:OWLDataProperty_004086>
+        <rdfs:label xml:lang="en">RS Pasar Minggu</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004092 -->
+
+    <owl:NamedIndividual rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004092">
+        <rdf:type rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#PublicHospital"/>
+        <organization:subordinateOf rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004075"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004081"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004082"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004083"/>
+        <wgs84_pos:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-6.659320953</wgs84_pos:lat>
+        <wgs84_pos:long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">106.8547053</wgs84_pos:long>
+        <GovernmentSpecifiedStatisticalArea:OWLDataProperty_004086 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;1st Class Bed&apos; 14
+&apos;2nd Class Bed&apos; 23
+&apos;3rd Class Bed&apos; 23</GovernmentSpecifiedStatisticalArea:OWLDataProperty_004086>
+        <rdfs:label xml:lang="en">RS Ciawi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004093 -->
+
+    <owl:NamedIndividual rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004093">
+        <rdf:type rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#PublicHospital"/>
+        <organization:subordinateOf rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004075"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004081"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004082"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004083"/>
+        <wgs84_pos:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-6.894322390</wgs84_pos:lat>
+        <wgs84_pos:long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">106.7947574</wgs84_pos:long>
+        <GovernmentSpecifiedStatisticalArea:OWLDataProperty_004086 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;1st Class Bed&apos; 15
+&apos;2nd Class Bed&apos;	27
+&apos;3rd Class Bed&apos;	26</GovernmentSpecifiedStatisticalArea:OWLDataProperty_004086>
+        <rdfs:label xml:lang="en">RS Sekarwangi Sukabumi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004094 -->
+
+    <owl:NamedIndividual rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004094">
+        <rdf:type rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#PublicHospital"/>
+        <organization:subordinateOf rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004075"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004081"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004082"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004083"/>
+        <wgs84_pos:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-6.730395997</wgs84_pos:lat>
+        <wgs84_pos:long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">108.557482</wgs84_pos:long>
+        <GovernmentSpecifiedStatisticalArea:OWLDataProperty_004086 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;1st Class Bed&apos; 16
+&apos;2nd Class Bed&apos;	29
+&apos;3rd Class Bed&apos;	27</GovernmentSpecifiedStatisticalArea:OWLDataProperty_004086>
+        <rdfs:label xml:lang="en">RS Gunung Jati Cirebon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004095 -->
+
+    <owl:NamedIndividual rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004095">
+        <rdf:type rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#PublicHospital"/>
+        <organization:subordinateOf rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004105"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004081"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004082"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004083"/>
+        <wgs84_pos:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-7.699919339</wgs84_pos:lat>
+        <wgs84_pos:long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">109.6612214</wgs84_pos:long>
+        <GovernmentSpecifiedStatisticalArea:OWLDataProperty_004086 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;1st Class Bed&apos; 9
+&apos;2nd Class Bed&apos; 11
+&apos;3rd Class Bed&apos;	 22</GovernmentSpecifiedStatisticalArea:OWLDataProperty_004086>
+        <rdfs:label xml:lang="en">RSUD Dr.Soedirman Kebumen</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004097 -->
+
+    <owl:NamedIndividual rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004097">
+        <rdf:type rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#PublicHospital"/>
+        <organization:subordinateOf rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004105"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004081"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004082"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004083"/>
+        <wgs84_pos:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-6.874378322</wgs84_pos:lat>
+        <wgs84_pos:long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">109.0526378</wgs84_pos:long>
+        <GovernmentSpecifiedStatisticalArea:OWLDataProperty_004086 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;1st Class Bed&apos; 7	
+&apos;2nd Class Bed&apos; 16
+&apos;3rd Class Bed&apos;	26</GovernmentSpecifiedStatisticalArea:OWLDataProperty_004086>
+        <rdfs:label xml:lang="en">RSUD Brebes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004098 -->
+
+    <owl:NamedIndividual rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004098">
+        <rdf:type rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#PublicHospital"/>
+        <organization:subordinateOf rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004104"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004081"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004082"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004083"/>
+        <wgs84_pos:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-6.998265008</wgs84_pos:lat>
+        <wgs84_pos:long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">113.5511599</wgs84_pos:long>
+        <GovernmentSpecifiedStatisticalArea:OWLDataProperty_004086 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;1st Class Bed&apos; 11
+&apos;2nd Class Bed&apos;	23
+&apos;3rd Class Bed&apos;	31</GovernmentSpecifiedStatisticalArea:OWLDataProperty_004086>
+        <rdfs:label xml:lang="en">RS Dr.Soetomo Subaraya</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004099 -->
+
+    <owl:NamedIndividual rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004099">
+        <rdf:type rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#PublicHospital"/>
+        <organization:subordinateOf rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004104"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004081"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004082"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004083"/>
+        <wgs84_pos:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-7.71838736</wgs84_pos:lat>
+        <wgs84_pos:long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">113.4397449</wgs84_pos:long>
+        <GovernmentSpecifiedStatisticalArea:OWLDataProperty_004086 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;1st Class Bed&apos; 15
+&apos;2nd Class Bed&apos;	25
+&apos;3rd Class Bed&apos;	34</GovernmentSpecifiedStatisticalArea:OWLDataProperty_004086>
+        <rdfs:label xml:lang="en">RS Waluyo Jati</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004100 -->
+
+    <owl:NamedIndividual rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004100">
+        <rdf:type rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#PublicHospital"/>
+        <organization:subordinateOf rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004104"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004081"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004082"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004083"/>
+        <wgs84_pos:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-8.336925949</wgs84_pos:lat>
+        <wgs84_pos:long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">114.2247573</wgs84_pos:long>
+        <GovernmentSpecifiedStatisticalArea:OWLDataProperty_004086 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;1st Class Bed&apos; 19
+&apos;2nd Class Bed&apos;	27
+&apos;3rd Class Bed&apos; 23</GovernmentSpecifiedStatisticalArea:OWLDataProperty_004086>
+        <rdfs:label xml:lang="en">RSUD Banyuwangi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004101 -->
+
+    <owl:NamedIndividual rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004101">
+        <rdf:type rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#PublicHospital"/>
+        <organization:subordinateOf rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004073"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004081"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004082"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004083"/>
+        <wgs84_pos:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-0.683375756</wgs84_pos:lat>
+        <wgs84_pos:long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">100.2869595</wgs84_pos:long>
+        <GovernmentSpecifiedStatisticalArea:OWLDataProperty_004086 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;1st Class Bed&apos; 15	
+&apos;2nd Class Bed&apos; 22
+&apos;3rd Class Bed&apos;	28</GovernmentSpecifiedStatisticalArea:OWLDataProperty_004086>
+        <rdfs:label xml:lang="en">RS Paru Sumatera Barat</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004102 -->
+
+    <owl:NamedIndividual rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004102">
+        <rdf:type rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#PublicHospital"/>
+        <organization:subordinateOf rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004073"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004081"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004082"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004083"/>
+        <wgs84_pos:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-0.283503432</wgs84_pos:lat>
+        <wgs84_pos:long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">100.374506</wgs84_pos:long>
+        <GovernmentSpecifiedStatisticalArea:OWLDataProperty_004086 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;1st Class Bed&apos; 16	
+&apos;2nd Class Bed&apos; 27
+&apos;3rd Class Bed&apos; 27</GovernmentSpecifiedStatisticalArea:OWLDataProperty_004086>
+        <rdfs:label xml:lang="en">RSUD Kota Bukittinggi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004103 -->
+
+    <owl:NamedIndividual rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004103">
+        <rdf:type rdf:resource="http://ontology.eil.utoronto.ca/organization.owl#Organization"/>
+        <organization:subordinateOf rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004067"/>
+        <organization:superiorOf rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004092"/>
+        <organization:superiorOf rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004093"/>
+        <organization:superiorOf rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004094"/>
+        <obo:RO_0001025 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004067"/>
+        <GovernmentSpecifiedStatisticalArea:OWLDataProperty_004061 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">31,054,226,708.00</GovernmentSpecifiedStatisticalArea:OWLDataProperty_004061>
+        <GovernmentSpecifiedStatisticalArea:OWLDataProperty_004106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9,316,268,012.40</GovernmentSpecifiedStatisticalArea:OWLDataProperty_004106>
+        <rdfs:label xml:lang="en">Dinas Kesehatan Jawa Barat</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004104 -->
+
+    <owl:NamedIndividual rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004104">
+        <rdf:type rdf:resource="http://ontology.eil.utoronto.ca/organization.owl#Organization"/>
+        <organization:superiorOf rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004098"/>
+        <organization:superiorOf rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004099"/>
+        <organization:superiorOf rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004100"/>
+        <obo:RO_0001025 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004069"/>
+        <GovernmentSpecifiedStatisticalArea:OWLDataProperty_004061 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">34,987,258,797.00</GovernmentSpecifiedStatisticalArea:OWLDataProperty_004061>
+        <GovernmentSpecifiedStatisticalArea:OWLDataProperty_004106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10,496,177,639.10</GovernmentSpecifiedStatisticalArea:OWLDataProperty_004106>
+        <rdfs:label xml:lang="en">Dinas Kesehatan Jawa Timur</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004105 -->
+
+    <owl:NamedIndividual rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004105">
+        <rdf:type rdf:resource="http://ontology.eil.utoronto.ca/organization.owl#Organization"/>
+        <organization:superiorOf rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004095"/>
+        <organization:superiorOf rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004097"/>
+        <organization:superiorOf rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004107"/>
+        <obo:RO_0001025 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004068"/>
+        <GovernmentSpecifiedStatisticalArea:OWLDataProperty_004061 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">37,125,433,466.00</GovernmentSpecifiedStatisticalArea:OWLDataProperty_004061>
+        <GovernmentSpecifiedStatisticalArea:OWLDataProperty_004106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11,137,630,039.80</GovernmentSpecifiedStatisticalArea:OWLDataProperty_004106>
+        <rdfs:label xml:lang="en">Dinas Kesehatan Jawa Tengah</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004107 -->
+
+    <owl:NamedIndividual rdf:about="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004107">
+        <rdf:type rdf:resource="http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#PublicHospital"/>
+        <organization:subordinateOf rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004105"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004081"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004082"/>
+        <GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:resource="https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004083"/>
+        <wgs84_pos:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-6.92221593</wgs84_pos:lat>
+        <wgs84_pos:long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">110.4958665</wgs84_pos:long>
+        <GovernmentSpecifiedStatisticalArea:OWLDataProperty_004086 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;1st Class Bed&apos; 6
+&apos;2nd Class Bed&apos; 13
+&apos;3rd Class Bed&apos; 27</GovernmentSpecifiedStatisticalArea:OWLDataProperty_004086>
+        <rdfs:label xml:lang="en">RSUD Sultan Agung</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
