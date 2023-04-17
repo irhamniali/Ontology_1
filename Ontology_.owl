@@ -1,0 +1,414 @@
+@prefix : <http://www.semanticweb.org/irhamniali/ontologies/2023/3/untitled-ontology-54#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ns: <http://creativecommons.org/ns#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix protege: <http://protege.stanford.edu/plugins/owl/protege#> .
+@prefix data-view: <http://www.w3.org/2003/g/data-view#> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix GCI-Health: <http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl#> .
+@prefix organization: <http://ontology.eil.utoronto.ca/organization.owl#> .
+@prefix GovernmentSpecifiedStatisticalArea: <https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#> .
+@base <http://www.semanticweb.org/irhamniali/ontologies/2023/3/untitled-ontology-54> .
+
+<http://www.semanticweb.org/irhamniali/ontologies/2023/3/untitled-ontology-54> rdf:type owl:Ontology ;
+                                                                                owl:imports <http://ontology.eil.utoronto.ca/GCI/Health/GCI-Health.owl> ,
+                                                                                            obo:stato.owl .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLObjectProperty_004084
+GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004084 rdf:type owl:ObjectProperty ;
+                                                            rdfs:label "has occupied bed"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLObjectProperty_004089
+GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 rdf:type owl:ObjectProperty ;
+                                                            rdfs:label "has_Unocupied_bed_facility"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLDataProperty_004061
+GovernmentSpecifiedStatisticalArea:OWLDataProperty_004061 rdf:type owl:DatatypeProperty ;
+                                                          rdfs:label "has budget"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLDataProperty_004085
+GovernmentSpecifiedStatisticalArea:OWLDataProperty_004085 rdf:type owl:DatatypeProperty ;
+                                                          rdfs:subPropertyOf owl:topDataProperty ;
+                                                          rdfs:label "has bed"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLDataProperty_004086
+GovernmentSpecifiedStatisticalArea:OWLDataProperty_004086 rdf:type owl:DatatypeProperty ;
+                                                          rdfs:subPropertyOf owl:topDataProperty ;
+                                                          rdfs:domain GCI-Health:HospitalBed ;
+                                                          rdfs:range xsd:integer ;
+                                                          rdfs:label "has unoccupied bed"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLDataProperty_004106
+GovernmentSpecifiedStatisticalArea:OWLDataProperty_004106 rdf:type owl:DatatypeProperty ;
+                                                          rdfs:range xsd:string ;
+                                                          rdfs:label "budget_realization"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004057
+GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004057 rdf:type owl:NamedIndividual ,
+                                                                      GCI-Health:PublicHospital ;
+                                                             organization:subordinateOf GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004059 ;
+                                                             GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004081 ,
+                                                                                                                         GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004082 ,
+                                                                                                                         GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004083 ;
+                                                             wgs84_pos:lat "5.563819479"^^xsd:string ;
+                                                             wgs84_pos:long "95.33757687"^^xsd:string ;
+                                                             GovernmentSpecifiedStatisticalArea:OWLDataProperty_004086 """'1st Class Bed'  9
+'2nd Class Bed' 15
+'3rd Class Bed' 27"""^^xsd:string ;
+                                                             rdfs:label "Dr.Zainal Abidin Hospital"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004058
+GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004058 rdf:type owl:NamedIndividual ,
+                                                                      <http://schema.org/State> ;
+                                                             organization:commitedTo GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004059 ;
+                                                             rdfs:label "Aceh"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004059
+GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004059 rdf:type owl:NamedIndividual ,
+                                                                      organization:Organization ;
+                                                             organization:subordinateOf GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004058 ;
+                                                             organization:superiorOf GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004057 ,
+                                                                                     GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004087 ,
+                                                                                     GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004088 ;
+                                                             GovernmentSpecifiedStatisticalArea:OWLDataProperty_004061 "28,238,494,050.00"^^xsd:string ;
+                                                             GovernmentSpecifiedStatisticalArea:OWLDataProperty_004106 "8,471,548,215.00" ;
+                                                             rdfs:label "Dinas Kesehatan Aceh"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004060
+GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004060 rdf:type owl:NamedIndividual ,
+                                                                      <http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation-v2.owl#Monetary_scale> ;
+                                                             rdfs:label "Medium"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004062
+GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004062 rdf:type owl:NamedIndividual ,
+                                                                      GCI-Health:PublicHospital ;
+                                                             GCI-Health:committedBy GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004074 ;
+                                                             GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004081 ,
+                                                                                                                         GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004082 ,
+                                                                                                                         GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004083 ;
+                                                             wgs84_pos:lat "-6.201666625"^^xsd:string ;
+                                                             wgs84_pos:long "106.8865703"^^xsd:string ;
+                                                             GovernmentSpecifiedStatisticalArea:OWLDataProperty_004086 """'1st Class Bed' 24
+'2nd Class Bed' 23
+'3rd Class Bed' 17"""^^xsd:string ;
+                                                             rdfs:label "Persahabatan Hospital"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004063
+GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004063 rdf:type owl:NamedIndividual ,
+                                                                      <http://schema.org/State> ;
+                                                             organization:commitedTo GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004074 ;
+                                                             rdfs:label "DKI Jakarta"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004066
+GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004066 rdf:type owl:NamedIndividual ,
+                                                                      <http://schema.org/State> ;
+                                                             rdfs:label "Papua"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004067
+GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004067 rdf:type owl:NamedIndividual ,
+                                                                      <http://schema.org/State> ;
+                                                             organization:commitedTo GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004075 ;
+                                                             rdfs:label "Jawa Barat"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004068
+GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004068 rdf:type owl:NamedIndividual ,
+                                                                      <http://schema.org/State> ;
+                                                             rdfs:label "Jawa Tengah"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004069
+GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004069 rdf:type owl:NamedIndividual ,
+                                                                      <http://schema.org/State> ;
+                                                             rdfs:label "Jawa Timur"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004070
+GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004070 rdf:type owl:NamedIndividual ,
+                                                                      <http://schema.org/State> ;
+                                                             rdfs:label "Sumatera Barat"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004071
+GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004071 rdf:type owl:NamedIndividual ;
+                                                             rdfs:label "RSU M.Jamil"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004072
+GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004072 rdf:type owl:NamedIndividual ,
+                                                                      GCI-Health:PublicHospital ;
+                                                             GCI-Health:committedBy GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004073 ;
+                                                             obo:IAO_0000404 "-0.6139160058894597"^^xsd:string ;
+                                                             obo:IAO_0000406 100.291256 ;
+                                                             rdfs:label "RS Umum Daerah Padang Pariaman"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004073
+GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004073 rdf:type owl:NamedIndividual ,
+                                                                      organization:Organization ;
+                                                             organization:superiorOf GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004071 ,
+                                                                                     GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004072 ,
+                                                                                     GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004101 ;
+                                                             obo:RO_0001025 GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004070 ;
+                                                             GovernmentSpecifiedStatisticalArea:OWLDataProperty_004061 "37,986,299,875.00"^^xsd:string ;
+                                                             GovernmentSpecifiedStatisticalArea:OWLDataProperty_004106 "11,395,889,962.50"^^xsd:string ;
+                                                             rdfs:label "Dinas Kesehatan Sumatera Barat"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004074
+GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004074 rdf:type owl:NamedIndividual ;
+                                                             organization:commitedTo GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004062 ;
+                                                             organization:subordinateOf GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004063 ;
+                                                             organization:superiorOf GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004090 ,
+                                                                                     GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004091 ;
+                                                             GovernmentSpecifiedStatisticalArea:OWLDataProperty_004061 "32000000"^^xsd:string ;
+                                                             GovernmentSpecifiedStatisticalArea:OWLDataProperty_004106 "42,208,494,121.00"^^xsd:string ;
+                                                             rdfs:label "Dinas Kesehatan DKI Jakarta"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004075
+GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004075 rdf:type owl:NamedIndividual ;
+                                                             rdfs:label "Dinas Kesehatan Jawa Barat"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004076
+GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004076 rdf:type owl:NamedIndividual ;
+                                                             rdfs:label "Dinas Kesehatan Jawa Timur"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004077
+GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004077 rdf:type owl:NamedIndividual ;
+                                                             obo:RO_0001025 GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004070 ;
+                                                             obo:IAO_0000404 "-0.6139160058894597"^^xsd:string ;
+                                                             obo:IAO_0000406 "100.291256"^^xsd:string ;
+                                                             GovernmentSpecifiedStatisticalArea:OWLDataProperty_004061 "2300000000"^^xsd:string ;
+                                                             rdfs:label "Sumatera Barat"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004078
+GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004078 rdf:type owl:NamedIndividual ;
+                                                             organization:subordinateOf GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004067 ;
+                                                             rdfs:label "Dinas Kesehatan Jawa Barat"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004079
+GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004079 rdf:type owl:NamedIndividual ,
+                                                                      GCI-Health:PrivateHospital ;
+                                                             obo:RO_0001025 GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004067 ;
+                                                             obo:IAO_0000404 "12234"^^xsd:string ;
+                                                             obo:IAO_0000406 "534223"^^xsd:string ;
+                                                             rdfs:label "RS St.Boromeus"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004080
+GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004080 rdf:type owl:NamedIndividual ,
+                                                                      <http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#Material_Resource> ;
+                                                             rdfs:label "VIP Bed"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004081
+GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004081 rdf:type owl:NamedIndividual ,
+                                                                      <http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#Material_Resource> ;
+                                                             rdfs:label "1st Class Bed"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004082
+GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004082 rdf:type owl:NamedIndividual ,
+                                                                      <http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#Material_Resource> ;
+                                                             rdfs:label "2nd Class Bed"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004083
+GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004083 rdf:type owl:NamedIndividual ,
+                                                                      <http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#Material_Resource> ;
+                                                             rdfs:label "3rd Class Bed"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004087
+GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004087 rdf:type owl:NamedIndividual ,
+                                                                      GCI-Health:PublicHospital ;
+                                                             organization:subordinateOf GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004059 ;
+                                                             wgs84_pos:lat "5.555502859"^^xsd:string ;
+                                                             wgs84_pos:long "95.32596923"^^xsd:string ;
+                                                             GovernmentSpecifiedStatisticalArea:OWLDataProperty_004086 """'1st Class Bed' 11
+'2nd Class Bed' 18
+'3rd Class Bed' 29"""^^xsd:string ;
+                                                             rdfs:label "RSUD Kota Subulussalam"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004088
+GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004088 rdf:type owl:NamedIndividual ,
+                                                                      GCI-Health:PublicHospital ;
+                                                             organization:subordinateOf GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004059 ;
+                                                             GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004081 ,
+                                                                                                                         GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004082 ,
+                                                                                                                         GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004083 ;
+                                                             wgs84_pos:lat "5.555502859"^^xsd:string ;
+                                                             wgs84_pos:long "95.32596923"^^xsd:string ;
+                                                             GovernmentSpecifiedStatisticalArea:OWLDataProperty_004086 """'1st Class Bed' 9
+'2nd Class Bed' 15
+'3rd Class Bed' 27"""^^xsd:string ;
+                                                             rdfs:label "RS Iskandar Muda Banda Aceh"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004090
+GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004090 rdf:type owl:NamedIndividual ,
+                                                                      GCI-Health:PublicHospital ;
+                                                             rdfs:label "RS Pasar Rebo"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004091
+GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004091 rdf:type owl:NamedIndividual ,
+                                                                      GCI-Health:PublicHospital ;
+                                                             rdfs:label "RS Pasar Minggu"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004092
+GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004092 rdf:type owl:NamedIndividual ,
+                                                                      GCI-Health:PublicHospital ;
+                                                             organization:subordinateOf GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004075 ;
+                                                             GovernmentSpecifiedStatisticalArea:OWLObjectProperty_004089 GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004081 ,
+                                                                                                                         GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004082 ,
+                                                                                                                         GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004083 ;
+                                                             wgs84_pos:lat "-6.659320953"^^xsd:string ;
+                                                             wgs84_pos:long "106.8547053"^^xsd:string ;
+                                                             GovernmentSpecifiedStatisticalArea:OWLDataProperty_004086 """'1st Class Bed' 14
+'2nd Class Bed' 23
+'3rd Class Bed' 23"""^^xsd:string ;
+                                                             rdfs:label "RS Ciawi"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004093
+GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004093 rdf:type owl:NamedIndividual ,
+                                                                      GCI-Health:PublicHospital ;
+                                                             rdfs:label "RS Sekarwangi Sukabumi"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004094
+GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004094 rdf:type owl:NamedIndividual ,
+                                                                      GCI-Health:PublicHospital ;
+                                                             rdfs:label "RS Gunung Jati Cirebon"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004095
+GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004095 rdf:type owl:NamedIndividual ,
+                                                                      GCI-Health:PublicHospital ;
+                                                             rdfs:label "RSUD Dr.Soedirman Kebumen"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004097
+GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004097 rdf:type owl:NamedIndividual ,
+                                                                      GCI-Health:PublicHospital ;
+                                                             rdfs:label "RSUD Brebes"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004098
+GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004098 rdf:type owl:NamedIndividual ,
+                                                                      GCI-Health:PublicHospital ;
+                                                             rdfs:label "RS Dr.Soetomo Subaraya"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004099
+GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004099 rdf:type owl:NamedIndividual ,
+                                                                      GCI-Health:PublicHospital ;
+                                                             rdfs:label "RS Waluyo Jati"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004100
+GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004100 rdf:type owl:NamedIndividual ,
+                                                                      GCI-Health:PublicHospital ;
+                                                             rdfs:label "RSUD Banyuwangi"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004101
+GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004101 rdf:type owl:NamedIndividual ,
+                                                                      GCI-Health:PublicHospital ;
+                                                             rdfs:label "RS Paru Sumatera Barat"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004102
+GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004102 rdf:type owl:NamedIndividual ,
+                                                                      GCI-Health:PublicHospital ;
+                                                             rdfs:label "RSUD Kota Bukittinggi"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004103
+GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004103 rdf:type owl:NamedIndividual ,
+                                                                      organization:Organization ;
+                                                             organization:subordinateOf GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004067 ;
+                                                             organization:superiorOf GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004092 ,
+                                                                                     GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004093 ,
+                                                                                     GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004094 ;
+                                                             obo:RO_0001025 GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004067 ;
+                                                             GovernmentSpecifiedStatisticalArea:OWLDataProperty_004061 "31,054,226,708.00"^^xsd:string ;
+                                                             GovernmentSpecifiedStatisticalArea:OWLDataProperty_004106 "9,316,268,012.40"^^xsd:string ;
+                                                             rdfs:label "Dinas Kesehatan Jawa Barat"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004104
+GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004104 rdf:type owl:NamedIndividual ,
+                                                                      organization:Organization ;
+                                                             organization:superiorOf GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004098 ,
+                                                                                     GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004099 ,
+                                                                                     GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004100 ;
+                                                             obo:RO_0001025 GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004069 ;
+                                                             GovernmentSpecifiedStatisticalArea:OWLDataProperty_004061 "34,987,258,797.00"^^xsd:string ;
+                                                             GovernmentSpecifiedStatisticalArea:OWLDataProperty_004106 "10,496,177,639.10"^^xsd:string ;
+                                                             rdfs:label "Dinas Kesehatan Jawa Timur"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004105
+GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004105 rdf:type owl:NamedIndividual ,
+                                                                      organization:Organization ;
+                                                             organization:superiorOf GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004095 ,
+                                                                                     GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004097 ,
+                                                                                     GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004107 ;
+                                                             obo:RO_0001025 GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004068 ;
+                                                             GovernmentSpecifiedStatisticalArea:OWLDataProperty_004061 "37,125,433,466.00"^^xsd:string ;
+                                                             GovernmentSpecifiedStatisticalArea:OWLDataProperty_004106 "11,137,630,039.80"^^xsd:string ;
+                                                             rdfs:label "Dinas Kesehatan Jawa Tengah"@en .
+
+
+###  https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/GovernmentSpecifiedStatisticalArea#OWLNamedIndividual_004107
+GovernmentSpecifiedStatisticalArea:OWLNamedIndividual_004107 rdf:type owl:NamedIndividual ,
+                                                                      GCI-Health:PublicHospital ;
+                                                             rdfs:label "RSUD Sultan Agung"@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
